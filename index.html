@@ -307,8 +307,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <td style="padding-bottom: 25px">19:30</td>
-                        <td style="padding-bottom: 25px">Dîner</td>
+                        <td class="last-cell">19:30</td>
+                        <td class="last-cell">Dîner</td>
                       </tr>
                     </tbody>
                   </table>
@@ -364,8 +364,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <td style="padding-bottom: 25px">19:30</td>
-                        <td style="padding-bottom: 25px">Dîner</td>
+                        <td class="last-cell">19:30</td>
+                        <td class="last-cell">Dîner</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1037,6 +1037,10 @@
       border-bottom: 1px dotted gray;
     }
 
+    .last-cell {
+      padding-bottom: 25px;
+    }
+
     @media (max-width: 600px) {
       .date-table {
         display: none;
@@ -1061,6 +1065,10 @@
         padding: 10px 30px;
         background: white;
         border-bottom: 1px dotted gray;
+      }
+
+      .last-cell {
+        padding-bottom: 16px;
       }
     }
   </style>
