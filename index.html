@@ -565,7 +565,9 @@
             </div>
           </div>
 
-          <div class="bg-gray-100 text-gray-600 px-6 lg:px-8 py-20 lg:py-32">
+          <div
+            class="bg-gray-100 text-gray-600 px-6 lg:px-8 py-20 lg:py-32 date-table"
+          >
             <div class="max-w-screen-xl mx-auto">
               <div>
                 <h2
@@ -674,6 +676,128 @@
                             </p>
                             <p class="border-2 p-1 px-3 font-bold rounded-md">
                               Dimanche 18
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-100 text-gray-600 px-6 lg:px-8 py-20 lg:py-32 date-table-sm"
+          >
+            <div class="max-w-screen-xl mx-auto">
+              <div>
+                <h2
+                  class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-medium text-center"
+                >
+                  Dates Disponibles
+                </h2>
+              </div>
+              <div
+                class="grid md:grid-cols-1 gap-12 lg:gap-x-8 xl:gap-x-16 mt-6 lg:mt-8 xl:mt-12"
+              >
+                <div style="margin: 0 auto">
+                  <p class="text-center font-bold uppercase mb-6 text-xl">
+                    2023
+                  </p>
+                  <table class="table-auto shadow-lg text-center">
+                    <tr>
+                      <th>Mois</th>
+                      <th>Jours</th>
+                    </tr>
+                    <tbody>
+                      <tr>
+                        <td class="bg-gray-50">Avril</td>
+                        <td class="bg-gray-50">
+                          <div style="display: flex; gap: 6px">
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              22
+                            </p>
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              23
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Mai</td>
+                        <td>
+                          <div style="display: flex; gap: 6px">
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              13
+                            </p>
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              14
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-gray-50">Juin</td>
+                        <td class="bg-gray-50">
+                          <div style="display: flex; gap: 6px">
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              17
+                            </p>
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              18
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Juillet</td>
+                        <td>
+                          <div style="display: flex; gap: 6px">
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              01
+                            </p>
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              02
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-gray-50">Septembre</td>
+                        <td class="bg-gray-50">
+                          <div style="display: flex; gap: 6px">
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              16
+                            </p>
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              17
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Octobre</td>
+                        <td>
+                          <div style="display: flex; gap: 6px">
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              14
+                            </p>
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              15
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-gray-50">Novembre</td>
+                        <td class="bg-gray-50">
+                          <div style="display: flex; gap: 6px">
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              17
+                            </p>
+                            <p class="border-2 p-1 px-3 font-bold rounded-md">
+                              18
                             </p>
                           </div>
                         </td>
@@ -911,6 +1035,33 @@
       padding: 15px 40px;
       background: white;
       border-bottom: 1px dotted gray;
+    }
+
+    @media (max-width: 600px) {
+      .date-table {
+        display: none;
+      }
+
+      .date-table-sm {
+        display: block;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-radius: 1em;
+        overflow: hidden;
+      }
+
+      td {
+        padding: 10px 30px;
+        background: white;
+      }
+
+      th {
+        padding: 10px 30px;
+        background: white;
+        border-bottom: 1px dotted gray;
+      }
     }
   </style>
 </html>
